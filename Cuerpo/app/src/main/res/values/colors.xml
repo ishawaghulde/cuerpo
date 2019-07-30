@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="app_primary">#F92E2E</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="editText">#F0EFEF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#A8A5A5</color>
+    <color name="blue1">#066AFF</color>
+    <color name="blue2">#1B6CE6</color>
+    <color name="blue3">#2D6CCA</color>
+    <color name="blue4">#3766AE</color>
+    <color name="blue5">#3A5D91</color>
+    <color name="blue6">#385075</color>
+    <color name="blue7">#324158</color>
+    <color name="blue_final">#283240</color>
+    <color name="blue0">#0AC6F5</color>
+    <color name="red_transparent">#66F92E2E</color>
+</resources>

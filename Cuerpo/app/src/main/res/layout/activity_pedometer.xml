@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <TextView
+        android:layout_margin="16dp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:text="Steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_steps"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="250dp"
+        android:background="@drawable/button_filled_style"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Stop Pedometer"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="32dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:text="Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_marginBottom="32dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:text="00:00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:text="Distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/distance_covered"
+                android:layout_marginBottom="32dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

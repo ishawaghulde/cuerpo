@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                app:wlv_borderColor="@color/app_primary"
+                app:wlv_borderWidth="3dp"
+                app:wlv_shapeType="circle"
+                app:wlv_round_rectangle="true"
+                app:wlv_triangle_direction="north"
+                app:wlv_titleCenterStrokeColor="#66FFFFFF"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleCenterColor="@color/black"
+                app:wlv_titleCenterSize="48sp"
+                app:wlv_titleTopStrokeColor="#66FFFFFF"
+                app:wlv_titleTopStrokeWidth="3dp"
+                app:wlv_titleTop="Goal : 10,000"
+                app:wlv_titleTopColor="@color/black"
+                app:wlv_titleTopSize="32sp"
+                app:wlv_titleBottomStrokeColor="#66FFFFFF"
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleBottomColor="@color/black"
+                app:wlv_titleBottom="Steps"
+                app:wlv_titleBottomSize="32sp"
+                app:wlv_waveAmplitude="70"
+                app:wlv_waveColor="@color/app_primary"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:max="100"
+                android:layout_margin="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="220dp"
+                android:id="@+id/start_button"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="start"
+                android:textColor="@color/white"
+                android:background="@drawable/button_filled_style"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="32dp">
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/distance"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/distanceText"
+                        android:textSize="24sp"
+                        android:textColor="#AA000000"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="#AA000000"
+                        android:text="Metres"
+                        android:layout_gravity="center"/>
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/kcal"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/calText"
+                        android:textSize="24sp"
+                        android:textColor="#AA000000"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="#AA000000"
+                        android:text="Cals"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/clock"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/timeText"
+                        android:textSize="24sp"
+                        android:textColor="#AA000000"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="#AA000000"
+                        android:text="Mins"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

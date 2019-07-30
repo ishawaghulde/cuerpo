@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Cuerpo</string>
+    <string name="track_calories">track calories</string>
+    <string name="track_water">track water intake</string>
+    <string name="track_sleep">track sleep</string>
+    <string name="calories_info">Track your daily calories for meals and exercise</string>
+    <string name="water_info">Keep yourself hydrated throughout the day</string>
+    <string name="sleep_info">And Zzzzzz....</string>
+    <string name="signUp">Sign Up</string>
+    <string name="getStarted">Get Started!</string>
+    <string name="Name">Name</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="height">Height (cm)</string>
+    <string name="dream_weight">Dream Weight</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repassword">Re-Type Password</string>
+    <string name="getStartedActivityTitle">Help us know you better</string>
+    <string name="exercise_prompt">Choose lifestyle</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="userWarning">Enter your name</string>
+    <string name="genderWarning">Select the gender you identify with</string>
+    <string name="ageWarning">
+        Our suggestion will vary depending on age
+    </string>
+    <string name="weightWarning">Our suggestion will vary depending on weight</string>
+    <string name="heightWarning">Our suggestion will vary depending on height</string>
+    <string name="activityWarning">Our suggestion will vary depending on your lifestyle</string>
+    <string name="dreamWeightWarning">Our suggestion will vary depending on whether you want ot loose weight</string>
+    <string name="requirement_activity_string1">Based on our calculations,</string>
+    <string name="calorie_budget">Calorie Budget</string>
+    <string name="water_requirement">Water Requirement</string>
+    <string name="sleep_requirement">Sleep Requirement</string>
+    <string name="tap_to_add">Tap to add</string>
+    <string name="you_have_only">You have only</string>
+    <string name="glasses_left">glasses left!</string>
+    <string name="pick_start">Pick Start Time</string>
+    <string name="pick_stop">Pick End Time</string>
+    <string name="rate_sleep">Rate Your Sleep</string>
+    <string name="cal_summary"> Today\'s Calorie Summary</string>
+    <string name="keep_fit">Exercise, and Eat More!</string>
+    <string name="start_pedometer">Get Running!</string>
+    <string name="track_cals">Tell us what you Ate</string>
+    <string name="start_calorie_tracker">Get Tracking!</string>
+
+    <string-array name="exercise_arrays">
+        <item>Sedentary(No activity)</item>
+        <item>Light Activity(1-3 days a week)</item>
+        <item>Moderate activity(3-5 days a week)</item>
+        <item>Heavy Activity(6-7 days a week)</item>
+        <item>Extensive Activity(7 days a week)</item>
+    </string-array>
+</resources>

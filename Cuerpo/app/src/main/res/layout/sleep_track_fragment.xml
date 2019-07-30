@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue0"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/linLayout1"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/start_time"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="32dp"
+                    android:layout_marginTop="94dp"
+                    android:background="@drawable/button_filled_style"
+                    android:text="@string/pick_start"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="80dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@id/linLayout1">
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="32dp"
+                    android:src="@drawable/dream04"
+                    tools:layout_editor_absoluteX="55dp"
+                    tools:layout_editor_absoluteY="132dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/linLayout2"
+                app:layout_constraintTop_toBottomOf="@id/imageView">
+
+                <Button
+                    android:id="@+id/end_time"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="32dp"
+                    android:layout_marginStart="80dp"
+                    android:background="@drawable/button_filled_style"
+                    android:text="@string/pick_stop"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/show_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="32dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/linLayout2"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/linLayout3"
+                android:gravity="center"
+                android:text="@string/rate_sleep"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="119dp"
+                tools:layout_editor_absoluteY="622dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:gravity="center"
+                android:id="@+id/linLayout3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="114dp"
+                tools:layout_editor_absoluteY="683dp">
+
+                <ImageView
+                    android:id="@+id/square1"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:background="@color/app_primary"
+                    android:src="@drawable/square" />
+
+                <ImageView
+                    android:id="@+id/square2"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:background="@color/app_primary"
+                    android:src="@drawable/square" />
+
+                <ImageView
+                    android:id="@+id/square3"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:background="@color/app_primary"
+                    android:src="@drawable/square" />
+
+                <ImageView
+                    android:id="@+id/square4"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:background="@color/app_primary"
+                    android:src="@drawable/square" />
+
+                <ImageView
+                    android:id="@+id/square5"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:background="@color/app_primary"
+                    android:src="@drawable/square" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
