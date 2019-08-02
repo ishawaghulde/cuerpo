@@ -20,4 +20,6 @@
     <color name="blue_final">#283240</color>
     <color name="blue0">#0AC6F5</color>
     <color name="red_transparent">#66F92E2E</color>
+    <color name="bar_graph">#2FB5F9</color>
+    <color name="turquoise">#00CED1</color>
 </resources>

@@ -96,3 +96,75 @@ public class MainActivity extends AppCompatActivity {
         timer.start();
     }
 }
+
+//        class AlarmReceiver extends BroadcastReceiver {
+//
+//            public static final String CHANNEL_ID = "exampleServiceChannel";
+//
+//            @Override
+//            public void onReceive(Context context, Intent intent) {
+//                Calendar c = Calendar.getInstance();
+//                int hour = c.get(Calendar.HOUR_OF_DAY);
+//                int minute = c.get(Calendar.MINUTE);
+//                if(hour==9|| hour==12||hour==3||hour==6){
+//                    String input = "Did you drink enough water?";
+//                    Notification notification = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
+//                            .setContentTitle("Change in Audio Input")
+//                            .setContentText(input)
+//                            .setSmallIcon(R.drawable.tab_water)
+//                            .setContentIntent(intent)
+//                            .build();
+//                }
+//
+//                Notification notification = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
+//                        .setContentTitle("Change in Audio Imput")
+//                        .setContentText("aloha")
+//                        .setSmallIcon(R.drawable.tab_water)
+//                        .setContentIntent(intent)
+//                        .build();
+//
+//
+//            }
+//        }
+//
+//        class DeviceBootReceiver extends BroadcastReceiver {
+//
+//            @Override
+//            public void onReceive(Context context, Intent intent) {
+//                if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
+//                    /* Setting the alarm here */
+//                    Intent alarmIntent = new Intent(context, AlarmReceiver.class);
+//                    PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, alarmIntent, 0);
+//
+//                    AlarmManager manager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+//                    int interval = 100*60*60*3;
+//                    manager.setInexactRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), interval, pendingIntent);
+//
+//                    Toast.makeText(context, "Alarm Set", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        }
+
+//    }
+//}
+//        Intent alarmIntent = new Intent(MainActivity.this, AlarmReceiver.class);
+//        pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, alarmIntent, 0);
+//        AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+//        int interval = 1000 * 60 * 60 * 3;
+//
+//        /* Set the alarm to start at 10:30 AM */
+//        Calendar calendar = Calendar.getInstance();
+//        calendar.setTimeInMillis(System.currentTimeMillis());
+//        calendar.set(Calendar.HOUR_OF_DAY, 9);
+//        calendar.set(Calendar.MINUTE, 0);
+//
+//        if (calendar.before(Calendar.getInstance())) {
+//            calendar.add(Calendar.DATE, 1);
+//        }
+//        if (manager != null) {
+//            manager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+//                    AlarmManager.INTERVAL_DAY, pendingIntent);
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//                manager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+//            }
+//        }

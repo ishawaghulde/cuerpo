@@ -66,6 +66,18 @@ public class DbHandler extends SQLiteOpenHelper {
         cursor.close();
         return false;
     }
+    public int GetStepsByDate(String date){
+        SQLiteDatabase db = this.getWritableDatabase();
+        int steps = 0;
+        String query = "SELECT total_steps FROM " +TABLE_Users;
+        Cursor cursor = db.rawQuery(query,null);
+        while(cursor.moveToNext()) {
+            steps = cursor.getInt(cursor.getColumnIndex(KEY_TOTAL_STEPS));
+        }
+        return steps;
+    }
+
+
 
     public String GetLastRow() {
         SQLiteDatabase db = this.getWritableDatabase();

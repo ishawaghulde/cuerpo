@@ -54,8 +54,14 @@ public class TodayFragment extends Fragment {
         total_steps = prefs.getInt("total_steps", 0);
 //        seekBar = view.findViewById(R.id.seekBar);
         distanceText = view.findViewById(R.id.distanceText);
+        distanceText.setText(String.valueOf(total_distance));
         calText = view.findViewById(R.id.calText);
+        calText.setText(String.valueOf(total_calories));
         timeText = view.findViewById(R.id.timeText);
+        timeText.setText(String.valueOf(total_time));
+        int percent = (int)(total_steps/100);
+        waveLoadingView.setProgressValue(percent);
+        waveLoadingView.setCenterTitle(String.valueOf(total_steps));
 
 
         Button start = view.findViewById(R.id.start_button);

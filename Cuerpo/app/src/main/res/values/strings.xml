@@ -44,6 +44,8 @@
     <string name="start_pedometer">Get Running!</string>
     <string name="track_cals">Tell us what you Ate</string>
     <string name="start_calorie_tracker">Get Tracking!</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string-array name="exercise_arrays">
         <item>Sedentary(No activity)</item>
